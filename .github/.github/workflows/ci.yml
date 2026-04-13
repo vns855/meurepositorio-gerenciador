@@ -25,4 +25,4 @@ jobs:
         run: ruff check .
 
       - name: Rodar os teste
-        run: pytest
+        run: pytest -v
