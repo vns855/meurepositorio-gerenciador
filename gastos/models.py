@@ -41,7 +41,7 @@ class Despesa(models.Model):
         verbose_name_plural = "Despesas"
 
     def __str__(self):
-        return f"{self.descricao} — R$ {self.valor:.2f}"
+        return f"{self.descricao} - R$ {self.valor:.2f}"
 
     def get_categoria_display_label(self):
         return dict(CATEGORIAS).get(self.categoria, self.categoria)
